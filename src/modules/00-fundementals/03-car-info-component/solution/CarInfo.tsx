@@ -4,13 +4,13 @@ import React from 'react';
 // <CarInfo color="blue" make="Audi" model="A5" />
 // <CarInfo color="white" make="Honda" model="Civic" />
 
-interface HOCProps {
+interface Props {
     model: string;
     make: string;
     color: string;
 }
 
-function CarInfo({ model, make, color }: HOCProps) {
+function CarInfo({ model, make, color }: Props) {
     return (
         <div>
             <div>Make: {make}</div>

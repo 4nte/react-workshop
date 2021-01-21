@@ -4,66 +4,46 @@ import { Route, withRouter } from 'react-router-dom';
 import Home from "./Home";
 import Exercise from "./components/Exercise";
 
-// Import solutions
-import Solution1 from './exercises/01-hello-world-component(React fundamentals)/exercise/App';
-import Solution2 from './exercises/02-using-typescript/exercise/App';
-import Solution3 from './exercises/03-car-info-component/exercise/App';
-import Solution4 from './exercises/04-click-alert/exercise/App';
-import Solution5 from './exercises/05-click-counter/exercise/App';
-import Solution6 from './exercises/06-favorite-color/exercise/App';
-import Solution7 from './exercises/07-clock-component/exercise/App';
-import Solution8 from './exercises/08-framework-statistics/exercise/App';
-import Solution9 from './exercises/09-service-status/exercise/App';
-import Solution10 from './exercises/10-user-form/exercise/App';
-import Solution11 from './exercises/11-conversion-m-ft/exercise/App';
-import Solution12 from './exercises/12-theme-provider/exercise/App';
-import Solution13 from './exercises/13-counter-error-boundary/exercise/App';
-import Solution14 from './exercises/14-styled-button(Styled components)/exercise/App';
-import Solution15 from './exercises/15-styled-button-props/exercise/App';
-import Solution16 from './exercises/16-routes(React router)/exercise/App';
-import Solution17 from './exercises/17-routes-active-style/exercise/App';
 
-// Import problems
-import problem1 from './exercises/01-hello-world-component(React fundamentals)/problem.md';
-import problem2 from './exercises/02-using-typescript/problem.md';
-import problem3 from './exercises/03-car-info-component/problem.md';
-import problem4 from './exercises/04-click-alert/problem.md';
-import problem5 from './exercises/05-click-counter/problem.md';
-import problem6 from './exercises/06-favorite-color/problem.md';
-import problem7 from './exercises/07-clock-component/problem.md';
-import problem8 from './exercises/08-framework-statistics/problem.md';
-import problem9 from './exercises/09-service-status/problem.md';
-import problem10 from './exercises/10-user-form/problem.md';
-import problem11 from './exercises/11-conversion-m-ft/problem.md';
-import problem12 from './exercises/12-theme-provider/problem.md';
-import problem13 from './exercises/13-counter-error-boundary/problem.md';
-import problem14 from './exercises/14-styled-button(Styled components)/problem.md';
-import problem15 from './exercises/15-styled-button-props/problem.md';
-import problem16 from './exercises/16-routes(React router)/problem.md';
-import problem17 from './exercises/17-routes-active-style/problem.md';
+
+    
+        // Import solutions
+        import fundementals_Solutionundefined from 'undefined';
+    
+        // Import problems
+        import fundementals_Problemundefined from 'undefined';
+
+    
+,
+    
+        // Import solutions
+        import react-router_Solutionundefined from 'undefined';
+    
+        // Import problems
+        import react-router_Problemundefined from 'undefined';
+
+    
+,
+    
+        // Import solutions
+        import styled-components_Solutionundefined from 'undefined';
+    
+        // Import problems
+        import styled-components_Problemundefined from 'undefined';
+
+    
+
+
+
 
 
 const ExerciseRoutes: React.FC = () => {
     return (
         <>
          <Route path="/" component={withRouter(Home)} exact />
-         <Route path="/exercise/1" component={() => Exercise({ component: Solution1, problem: problem1 })} />
-         <Route path="/exercise/2" component={() => Exercise({ component: Solution2, problem: problem2 })} />
-         <Route path="/exercise/3" component={() => Exercise({ component: Solution3, problem: problem3 })} />
-         <Route path="/exercise/4" component={() => Exercise({ component: Solution4, problem: problem4 })} />
-         <Route path="/exercise/5" component={() => Exercise({ component: Solution5, problem: problem5 })} />
-         <Route path="/exercise/6" component={() => Exercise({ component: Solution6, problem: problem6 })} />
-         <Route path="/exercise/7" component={() => Exercise({ component: Solution7, problem: problem7 })} />
-         <Route path="/exercise/8" component={() => Exercise({ component: Solution8, problem: problem8 })} />
-         <Route path="/exercise/9" component={() => Exercise({ component: Solution9, problem: problem9 })} />
-         <Route path="/exercise/10" component={() => Exercise({ component: Solution10, problem: problem10 })} />
-         <Route path="/exercise/11" component={() => Exercise({ component: Solution11, problem: problem11 })} />
-         <Route path="/exercise/12" component={() => Exercise({ component: Solution12, problem: problem12 })} />
-         <Route path="/exercise/13" component={() => Exercise({ component: Solution13, problem: problem13 })} />
-         <Route path="/exercise/14" component={() => Exercise({ component: Solution14, problem: problem14 })} />
-         <Route path="/exercise/15" component={() => Exercise({ component: Solution15, problem: problem15 })} />
-         <Route path="/exercise/16" component={() => Exercise({ component: Solution16, problem: problem16 })} />
-         <Route path="/exercise/17" component={() => Exercise({ component: Solution17, problem: problem17 })} />
+         <Route path="/exercise/undefined" component={() => Exercise({ component: Solutionundefined, problem: problemundefined })} />
+         <Route path="/exercise/undefined" component={() => Exercise({ component: Solutionundefined, problem: problemundefined })} />
+         <Route path="/exercise/undefined" component={() => Exercise({ component: Solutionundefined, problem: problemundefined })} />
         </>
     )
 }
