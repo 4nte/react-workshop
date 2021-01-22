@@ -8,9 +8,9 @@ import Exercise from "./components/Exercise";
 
 // Import solution components & problem markdown instructions
 {{ range $module := .Modules }}
-    {{ range $exercise := module.Exercises }}
-        import ${module.FormattedName}_{$module.Id}_Solution_${exercise.Id} from '${module.DirName}/${exercise.DirName}/exercise/App';
-        import ${module.FormattedName}_{$module.Id}_Problem_${exercise.Id} from '${module.DirName}/${exercise.DirName}/problem.md';
+    {{ range $exercise := $module.Exercises }}
+        import {{ $module.FormattedName}}_{{$module.Id}}_Solution_{{$exercise.Id}} from './modules/{{$module.DirName}}/{{$exercise.DirName}}/exercise/App';
+        import {{ $module.FormattedName}}_{{$module.Id}}_Problem_{{$exercise.Id}} from './modules/{{$module.DirName}}/{{$exercise.DirName}}/problem.md';
 
     {{end}}
 {{end}}
@@ -24,11 +24,9 @@ return (
 <>
 <Route path="/" component={withRouter(Home)} exact />
 
-{{ range $module := Modules }}
-    {{ range $exercise := module.Exercises }}
-        import {{ $module.FormattedName }}_{{ $module.Id }}_Solution_{{ $exercise.id }} from '{{ $module.DirName }}/{{ $exercise.DirName }}/exercise/App';
-        import {{ $module.FormattedName }}_{{ $module.Id }}_Problem_{{ $exercise.id }} from '{{ $module.DirName }}/{{ $exercise.DirName }}/problem.md';
-        <Route path="{{ $module.DirName }}/exercise/{{ $exercise.id}}" component={() => Exercise({ component: Solution${e.number}, problem: problem${e.number} })}>
+{{ range $module := .Modules }}
+    {{ range $exercise := $module.Exercises }}
+        <Route path="{{ $module.DirName }}/exercise/{{ $exercise.Id}}" component={() => Exercise({ component: {{ $module.FormattedName}}_{{$module.Id}}_Solution_{{$exercise.Id}}, problem: {{ $module.FormattedName}}_{{$module.Id}}_Problem_{{$exercise.Id}} })}/>
     {{end}}
 {{end}}
 </>

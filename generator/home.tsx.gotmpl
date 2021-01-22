@@ -2,16 +2,16 @@ import React from 'react';
 import { RouteComponentProps } from "react-router-dom";
 import styled from 'styled-components';
 
-const Wrapper = styled.div\`
+const Wrapper = styled.div`
 max-width: 1000px;
 margin: auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-column-gap: 25px;
 grid-row-gap: 25px;
-\`;
+`;
 
-const Exercise = styled.div\`
+const Exercise = styled.div`
 padding: 10px;
 border-radius: 5px;
 box-shadow: 0 0 5px 5px rgba(204,204,204,0.24);
@@ -22,47 +22,38 @@ flex-direction: column;
 cursor: pointer;
 box-shadow: 0 0 10px 10px rgba(204,204,204,0.33);
 }
-\`;
+`;
 
-const Title = styled.div\`
+const Title = styled.div`
 grid-column: 1 / span 4;
 display: flex;
 font-weight: bold;
 font-size: 30px;
 border-bottom: 1px solid #eaeaea;
 margin-top: 10px;
-\`;
+`;
 
-const Number = styled.span\`
+const Number = styled.span`
 font-size: 2rem;
 font-weight: 700;
-\`;
+`;
 
-const Home: React.FC<RouteComponentProps> = ({ history }) => {
+const Home: React.FC<any> = ({ history }) => {
     return (
-
-    {{ range $module := Modules }}
+    <>
+    {{ range $module := .Modules }}
         <Title>{{ $module.DirName }}</Title>
-        {{ range $exercise := module.Exercises }}
-            import {{ $module.FormattedName }}_{{ $module.Id }}_Solution_{{ $exercise.id }} from '{{ $module.DirName }}/{{ $exercise.DirName }}/exercise/App';
-            import {{ $module.FormattedName }}_{{ $module.Id }}_Problem_{{ $exercise.id }} from '{{ $module.DirName }}/{{ $exercise.DirName }}/problem.md';
+        {{ range $exercise := $module.Exercises }}
             <Wrapper>
-                ${exercises.map(e => `${e.sectionName ? `<Title>${e.sectionName}</Title>` : ``}
-                <Exercise onClick={() => history.push("/exercise/${e.number}")}>
-                <Number>${e.number}</Number>
-                <div>${e.name}</div>
-                </Exercise>`).join('\n')}
+                <Exercise onClick={() => history.push("/{{ $module.DirName }}/exercise/{{ $exercise.Id }}")}>
+                <Number>{{ $exercise.Id }}</Number>
+                <div>{{ $exercise.Name }}</div>
+                </Exercise>
             </Wrapper>
 
         {{end}}
     {{end}}
-    <Wrapper>
-        ${exercises.map(e => `${e.sectionName ? `<Title>${e.sectionName}</Title>` : ``}
-        <Exercise onClick={() => history.push("/exercise/${e.number}")}>
-        <Number>${e.number}</Number>
-        <div>${e.name}</div>
-        </Exercise>`).join('\n')}
-    </Wrapper>
+    </>
     )
     };
 

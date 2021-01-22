@@ -6,46 +6,141 @@ import Exercise from "./components/Exercise";
 
 
 
-    
-        // Import solutions
-        import fundementals_Solutionundefined from 'undefined';
-    
-        // Import problems
-        import fundementals_Problemundefined from 'undefined';
+// Import solution components & problem markdown instructions
 
     
-,
-    
-        // Import solutions
-        import react-router_Solutionundefined from 'undefined';
-    
-        // Import problems
-        import react-router_Problemundefined from 'undefined';
+        import Fundementals_1_Solution_1 from './modules/01-fundementals/01-hello-world-component/exercise/App';
+        import Fundementals_1_Problem_1 from './modules/01-fundementals/01-hello-world-component/problem.md';
 
     
-,
-    
-        // Import solutions
-        import styled-components_Solutionundefined from 'undefined';
-    
-        // Import problems
-        import styled-components_Problemundefined from 'undefined';
+        import Fundementals_1_Solution_2 from './modules/01-fundementals/02-using-typescript/exercise/App';
+        import Fundementals_1_Problem_2 from './modules/01-fundementals/02-using-typescript/problem.md';
 
     
+        import Fundementals_1_Solution_3 from './modules/01-fundementals/03-car-info-component/exercise/App';
+        import Fundementals_1_Problem_3 from './modules/01-fundementals/03-car-info-component/problem.md';
+
+    
+        import Fundementals_1_Solution_4 from './modules/01-fundementals/04-click-alert/exercise/App';
+        import Fundementals_1_Problem_4 from './modules/01-fundementals/04-click-alert/problem.md';
+
+    
+        import Fundementals_1_Solution_5 from './modules/01-fundementals/05-click-counter/exercise/App';
+        import Fundementals_1_Problem_5 from './modules/01-fundementals/05-click-counter/problem.md';
+
+    
+        import Fundementals_1_Solution_6 from './modules/01-fundementals/06-favorite-color/exercise/App';
+        import Fundementals_1_Problem_6 from './modules/01-fundementals/06-favorite-color/problem.md';
+
+    
+        import Fundementals_1_Solution_7 from './modules/01-fundementals/07-clock-component/exercise/App';
+        import Fundementals_1_Problem_7 from './modules/01-fundementals/07-clock-component/problem.md';
+
+    
+        import Fundementals_1_Solution_8 from './modules/01-fundementals/08-framework-statistics/exercise/App';
+        import Fundementals_1_Problem_8 from './modules/01-fundementals/08-framework-statistics/problem.md';
+
+    
+        import Fundementals_1_Solution_9 from './modules/01-fundementals/09-service-status/exercise/App';
+        import Fundementals_1_Problem_9 from './modules/01-fundementals/09-service-status/problem.md';
+
+    
+        import Fundementals_1_Solution_10 from './modules/01-fundementals/10-user-form/exercise/App';
+        import Fundementals_1_Problem_10 from './modules/01-fundementals/10-user-form/problem.md';
+
+    
+        import Fundementals_1_Solution_11 from './modules/01-fundementals/11-conversion-m-ft/exercise/App';
+        import Fundementals_1_Problem_11 from './modules/01-fundementals/11-conversion-m-ft/problem.md';
+
+    
+        import Fundementals_1_Solution_12 from './modules/01-fundementals/12-theme-provider/exercise/App';
+        import Fundementals_1_Problem_12 from './modules/01-fundementals/12-theme-provider/problem.md';
+
+    
+        import Fundementals_1_Solution_13 from './modules/01-fundementals/13-counter-error-boundary/exercise/App';
+        import Fundementals_1_Problem_13 from './modules/01-fundementals/13-counter-error-boundary/problem.md';
+
+    
+
+    
+        import StyledComponents_2_Solution_14 from './modules/02-styled-components/14-styled-button/exercise/App';
+        import StyledComponents_2_Problem_14 from './modules/02-styled-components/14-styled-button/problem.md';
+
+    
+        import StyledComponents_2_Solution_15 from './modules/02-styled-components/15-styled-button-props/exercise/App';
+        import StyledComponents_2_Problem_15 from './modules/02-styled-components/15-styled-button-props/problem.md';
+
+    
+
+    
+        import ReactRouter_3_Solution_16 from './modules/03-react-router/16-routes/exercise/App';
+        import ReactRouter_3_Problem_16 from './modules/03-react-router/16-routes/problem.md';
+
+    
+        import ReactRouter_3_Solution_17 from './modules/03-react-router/17-routes-active-style/exercise/App';
+        import ReactRouter_3_Problem_17 from './modules/03-react-router/17-routes-active-style/problem.md';
+
+    
+        import ReactRouter_3_Solution_18 from './modules/03-react-router/18-route-params/exercise/App';
+        import ReactRouter_3_Problem_18 from './modules/03-react-router/18-route-params/problem.md';
+
+    
+
 
 
 
 
 
 const ExerciseRoutes: React.FC = () => {
-    return (
-        <>
-         <Route path="/" component={withRouter(Home)} exact />
-         <Route path="/exercise/undefined" component={() => Exercise({ component: Solutionundefined, problem: problemundefined })} />
-         <Route path="/exercise/undefined" component={() => Exercise({ component: Solutionundefined, problem: problemundefined })} />
-         <Route path="/exercise/undefined" component={() => Exercise({ component: Solutionundefined, problem: problemundefined })} />
-        </>
-    )
+return (
+<>
+<Route path="/" component={withRouter(Home)} exact />
+
+        <Exercise component={Fundementals_1_Solution_11} problem={Fundementals_1_Problem_1}/>
+
+
+
+        <Route path="01-fundementals/exercise/2" component={() => Exercise({ component: Fundementals_1_Solution_2, problem: Fundementals_1_Problem_2 })}/>
+    
+        <Route path="01-fundementals/exercise/3" component={() => Exercise({ component: Fundementals_1_Solution_3, problem: Fundementals_1_Problem_3 })}/>
+    
+        <Route path="01-fundementals/exercise/4" component={() => Exercise({ component: Fundementals_1_Solution_4, problem: Fundementals_1_Problem_4 })}/>
+    
+        <Route path="01-fundementals/exercise/5" component={() => Exercise({ component: Fundementals_1_Solution_5, problem: Fundementals_1_Problem_5 })}/>
+    
+        <Route path="01-fundementals/exercise/6" component={() => Exercise({ component: Fundementals_1_Solution_6, problem: Fundementals_1_Problem_6 })}/>
+    
+        <Route path="01-fundementals/exercise/7" component={() => Exercise({ component: Fundementals_1_Solution_7, problem: Fundementals_1_Problem_7 })}/>
+    
+        <Route path="01-fundementals/exercise/8" component={() => Exercise({ component: Fundementals_1_Solution_8, problem: Fundementals_1_Problem_8 })}/>
+    
+        <Route path="01-fundementals/exercise/9" component={() => Exercise({ component: Fundementals_1_Solution_9, problem: Fundementals_1_Problem_9 })}/>
+    
+        <Route path="01-fundementals/exercise/10" component={() => Exercise({ component: Fundementals_1_Solution_10, problem: Fundementals_1_Problem_10 })}/>
+    
+        <Route path="01-fundementals/exercise/11" component={() => Exercise({ component: Fundementals_1_Solution_11, problem: Fundementals_1_Problem_11 })}/>
+    
+        <Route path="01-fundementals/exercise/12" component={() => Exercise({ component: Fundementals_1_Solution_12, problem: Fundementals_1_Problem_12 })}/>
+    
+        <Route path="01-fundementals/exercise/13" component={() => Exercise({ component: Fundementals_1_Solution_13, problem: Fundementals_1_Problem_13 })}/>
+    
+
+    
+        <Route path="02-styled-components/exercise/14" component={() => Exercise({ component: StyledComponents_2_Solution_14, problem: StyledComponents_2_Problem_14 })}/>
+    
+        <Route path="02-styled-components/exercise/15" component={() => Exercise({ component: StyledComponents_2_Solution_15, problem: StyledComponents_2_Problem_15 })}/>
+    
+
+    
+        <Route path="03-react-router/exercise/16" component={() => Exercise({ component: ReactRouter_3_Solution_16, problem: ReactRouter_3_Problem_16 })}/>
+    
+        <Route path="03-react-router/exercise/17" component={() => Exercise({ component: ReactRouter_3_Solution_17, problem: ReactRouter_3_Problem_17 })}/>
+    
+        <Route path="03-react-router/exercise/18" component={() => Exercise({ component: ReactRouter_3_Solution_18, problem: ReactRouter_3_Problem_18 })}/>
+    
+
+</>
+)
 }
 
 export default ExerciseRoutes;
