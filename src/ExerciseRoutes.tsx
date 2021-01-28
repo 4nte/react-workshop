@@ -96,47 +96,47 @@ return (
 <>
 <Route path="/" component={withRouter(Home)} exact />
 
-        <Exercise component={Fundementals_1_Solution_11} problem={Fundementals_1_Problem_1}/>
-
-
-
-        <Route path="01-fundementals/exercise/2" component={() => Exercise({ component: Fundementals_1_Solution_2, problem: Fundementals_1_Problem_2 })}/>
-    
-        <Route path="01-fundementals/exercise/3" component={() => Exercise({ component: Fundementals_1_Solution_3, problem: Fundementals_1_Problem_3 })}/>
-    
-        <Route path="01-fundementals/exercise/4" component={() => Exercise({ component: Fundementals_1_Solution_4, problem: Fundementals_1_Problem_4 })}/>
-    
-        <Route path="01-fundementals/exercise/5" component={() => Exercise({ component: Fundementals_1_Solution_5, problem: Fundementals_1_Problem_5 })}/>
-    
-        <Route path="01-fundementals/exercise/6" component={() => Exercise({ component: Fundementals_1_Solution_6, problem: Fundementals_1_Problem_6 })}/>
-    
-        <Route path="01-fundementals/exercise/7" component={() => Exercise({ component: Fundementals_1_Solution_7, problem: Fundementals_1_Problem_7 })}/>
-    
-        <Route path="01-fundementals/exercise/8" component={() => Exercise({ component: Fundementals_1_Solution_8, problem: Fundementals_1_Problem_8 })}/>
-    
-        <Route path="01-fundementals/exercise/9" component={() => Exercise({ component: Fundementals_1_Solution_9, problem: Fundementals_1_Problem_9 })}/>
-    
-        <Route path="01-fundementals/exercise/10" component={() => Exercise({ component: Fundementals_1_Solution_10, problem: Fundementals_1_Problem_10 })}/>
-    
-        <Route path="01-fundementals/exercise/11" component={() => Exercise({ component: Fundementals_1_Solution_11, problem: Fundementals_1_Problem_11 })}/>
-    
-        <Route path="01-fundementals/exercise/12" component={() => Exercise({ component: Fundementals_1_Solution_12, problem: Fundementals_1_Problem_12 })}/>
-    
-        <Route path="01-fundementals/exercise/13" component={() => Exercise({ component: Fundementals_1_Solution_13, problem: Fundementals_1_Problem_13 })}/>
-    
 
     
-        <Route path="02-styled-components/exercise/14" component={() => Exercise({ component: StyledComponents_2_Solution_14, problem: StyledComponents_2_Problem_14 })}/>
+        <Route path="/01-fundementals/exercise/1" component={() => Exercise({ component: Fundementals_1_Solution_1, problem: Fundementals_1_Problem_1 })}/>
     
-        <Route path="02-styled-components/exercise/15" component={() => Exercise({ component: StyledComponents_2_Solution_15, problem: StyledComponents_2_Problem_15 })}/>
+        <Route path="/01-fundementals/exercise/2" component={() => Exercise({ component: Fundementals_1_Solution_2, problem: Fundementals_1_Problem_2 })}/>
+    
+        <Route path="/01-fundementals/exercise/3" component={() => Exercise({ component: Fundementals_1_Solution_3, problem: Fundementals_1_Problem_3 })}/>
+    
+        <Route path="/01-fundementals/exercise/4" component={() => Exercise({ component: Fundementals_1_Solution_4, problem: Fundementals_1_Problem_4 })}/>
+    
+        <Route path="/01-fundementals/exercise/5" component={() => Exercise({ component: Fundementals_1_Solution_5, problem: Fundementals_1_Problem_5 })}/>
+    
+        <Route path="/01-fundementals/exercise/6" component={() => Exercise({ component: Fundementals_1_Solution_6, problem: Fundementals_1_Problem_6 })}/>
+    
+        <Route path="/01-fundementals/exercise/7" component={() => Exercise({ component: Fundementals_1_Solution_7, problem: Fundementals_1_Problem_7 })}/>
+    
+        <Route path="/01-fundementals/exercise/8" component={() => Exercise({ component: Fundementals_1_Solution_8, problem: Fundementals_1_Problem_8 })}/>
+    
+        <Route path="/01-fundementals/exercise/9" component={() => Exercise({ component: Fundementals_1_Solution_9, problem: Fundementals_1_Problem_9 })}/>
+    
+        <Route path="/01-fundementals/exercise/10" component={() => Exercise({ component: Fundementals_1_Solution_10, problem: Fundementals_1_Problem_10 })}/>
+    
+        <Route path="/01-fundementals/exercise/11" component={() => Exercise({ component: Fundementals_1_Solution_11, problem: Fundementals_1_Problem_11 })}/>
+    
+        <Route path="/01-fundementals/exercise/12" component={() => Exercise({ component: Fundementals_1_Solution_12, problem: Fundementals_1_Problem_12 })}/>
+    
+        <Route path="/01-fundementals/exercise/13" component={() => Exercise({ component: Fundementals_1_Solution_13, problem: Fundementals_1_Problem_13 })}/>
     
 
     
-        <Route path="03-react-router/exercise/16" component={() => Exercise({ component: ReactRouter_3_Solution_16, problem: ReactRouter_3_Problem_16 })}/>
+        <Route path="/02-styled-components/exercise/14" component={() => Exercise({ component: StyledComponents_2_Solution_14, problem: StyledComponents_2_Problem_14 })}/>
     
-        <Route path="03-react-router/exercise/17" component={() => Exercise({ component: ReactRouter_3_Solution_17, problem: ReactRouter_3_Problem_17 })}/>
+        <Route path="/02-styled-components/exercise/15" component={() => Exercise({ component: StyledComponents_2_Solution_15, problem: StyledComponents_2_Problem_15 })}/>
     
-        <Route path="03-react-router/exercise/18" component={() => Exercise({ component: ReactRouter_3_Solution_18, problem: ReactRouter_3_Problem_18 })}/>
+
+    
+        <Route path="/03-react-router/exercise/16" component={() => Exercise({ component: ReactRouter_3_Solution_16, problem: ReactRouter_3_Problem_16 })}/>
+    
+        <Route path="/03-react-router/exercise/17" component={() => Exercise({ component: ReactRouter_3_Solution_17, problem: ReactRouter_3_Problem_17 })}/>
+    
+        <Route path="/03-react-router/exercise/18" component={() => Exercise({ component: ReactRouter_3_Solution_18, problem: ReactRouter_3_Problem_18 })}/>
     
 
 </>

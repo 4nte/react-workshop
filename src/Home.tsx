@@ -3,46 +3,52 @@ import { RouteComponentProps } from "react-router-dom";
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-max-width: 1000px;
-margin: auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-column-gap: 25px;
-grid-row-gap: 25px;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 15px;
 `;
 
 const Exercise = styled.div`
-padding: 10px;
-border-radius: 5px;
-box-shadow: 0 0 5px 5px rgba(204,204,204,0.24);
-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-display: flex;
-flex-direction: column;
-&:hover {
-cursor: pointer;
-box-shadow: 0 0 10px 10px rgba(204,204,204,0.33);
-}
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(204,204,204,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px rgba(204,204,204,0.33);
+  }
 `;
 
 const Title = styled.div`
-grid-column: 1 / span 4;
-display: flex;
-font-weight: bold;
-font-size: 30px;
-border-bottom: 1px solid #eaeaea;
-margin-top: 10px;
+  text-align: start;
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px;  
 `;
 
 const Number = styled.span`
-font-size: 2rem;
-font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
 `;
 
+const Section = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+`;
+const Container = styled.div`
+  padding: 20px;
+`;
 const Home: React.FC<any> = ({ history }) => {
     return (
-    <>
+    <Container>
     
         <Title>01-fundementals</Title>
+        <Section>
         
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/1")}>
@@ -148,8 +154,10 @@ const Home: React.FC<any> = ({ history }) => {
             </Wrapper>
 
         
+        </Section>
     
         <Title>02-styled-components</Title>
+        <Section>
         
             <Wrapper>
                 <Exercise onClick={() => history.push("/02-styled-components/exercise/14")}>
@@ -167,8 +175,10 @@ const Home: React.FC<any> = ({ history }) => {
             </Wrapper>
 
         
+        </Section>
     
         <Title>03-react-router</Title>
+        <Section>
         
             <Wrapper>
                 <Exercise onClick={() => history.push("/03-react-router/exercise/16")}>
@@ -194,8 +204,9 @@ const Home: React.FC<any> = ({ history }) => {
             </Wrapper>
 
         
+        </Section>
     
-    </>
+    </Container>
     )
     };
 

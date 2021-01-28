@@ -3,12 +3,9 @@ import { RouteComponentProps } from "react-router-dom";
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-max-width: 1000px;
-margin: auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-column-gap: 25px;
-grid-row-gap: 25px;
+max-width: 300px;
+min-width: 200px;
+margin: 15px;
 `;
 
 const Exercise = styled.div`
@@ -25,12 +22,12 @@ box-shadow: 0 0 10px 10px rgba(204,204,204,0.33);
 `;
 
 const Title = styled.div`
-grid-column: 1 / span 4;
-display: flex;
+text-align: start;
+display: block;
 font-weight: bold;
 font-size: 30px;
 border-bottom: 1px solid #eaeaea;
-margin-top: 10px;
+padding: 20px;
 `;
 
 const Number = styled.span`
@@ -38,11 +35,20 @@ font-size: 2rem;
 font-weight: 700;
 `;
 
+const Section = styled.div`
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+`;
+const Container = styled.div`
+padding: 20px;
+`;
 const Home: React.FC<any> = ({ history }) => {
     return (
-    <>
+    <Container>
     {{ range $module := .Modules }}
         <Title>{{ $module.DirName }}</Title>
+        <Section>
         {{ range $exercise := $module.Exercises }}
             <Wrapper>
                 <Exercise onClick={() => history.push("/{{ $module.DirName }}/exercise/{{ $exercise.Id }}")}>
@@ -52,8 +58,9 @@ const Home: React.FC<any> = ({ history }) => {
             </Wrapper>
 
         {{end}}
+        </Section>
     {{end}}
-    </>
+    </Container>
     )
     };
 

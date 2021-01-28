@@ -26,7 +26,7 @@ return (
 
 {{ range $module := .Modules }}
     {{ range $exercise := $module.Exercises }}
-        <Route path="{{ $module.DirName }}/exercise/{{ $exercise.Id}}" component={() => Exercise({ component: {{ $module.FormattedName}}_{{$module.Id}}_Solution_{{$exercise.Id}}, problem: {{ $module.FormattedName}}_{{$module.Id}}_Problem_{{$exercise.Id}} })}/>
+        <Route path="/{{ $module.DirName }}/exercise/{{ $exercise.Id}}" component={() => Exercise({ component: {{ $module.FormattedName}}_{{$module.Id}}_Solution_{{$exercise.Id}}, problem: {{ $module.FormattedName}}_{{$module.Id}}_Problem_{{$exercise.Id}} })}/>
     {{end}}
 {{end}}
 </>
