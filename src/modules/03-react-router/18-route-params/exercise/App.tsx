@@ -1,11 +1,13 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import {Route, Switch} from "react-router";
+import UserDetails from "../solution/UserDetails";
+import {users} from "./data";
+import UserListItem from "../solution/UserListItem";
 
 const App: React.FC = () => {
-  // !!! do not modify location or <BrowserRouter /> tag !!!
   return (
-    <BrowserRouter basename="/exercise/18">
-      {/*render routes*/}
+    <BrowserRouter basename="03-react-router/exercise/18">
     </BrowserRouter>
   )
 };

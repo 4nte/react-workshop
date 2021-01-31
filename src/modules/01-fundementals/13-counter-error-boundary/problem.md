@@ -1,5 +1,5 @@
 ## Mission
-Create a **ErrorBoundary** component. Component should catch any error of it's children and display some kind of error message (message or stack trace or both).
+Create an **ErrorBoundary** component. Component should catch any error of it's children and display some kind of error message (message or stack trace or both).
 
 ## Steps 
 1. Create file `exercise/ErrorBoundary.tsx` and export class component `ErrorBoundary` as default.

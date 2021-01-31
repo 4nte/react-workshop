@@ -61,6 +61,18 @@ import Exercise from "./components/Exercise";
         import Fundementals_1_Problem_13 from './modules/01-fundementals/13-counter-error-boundary/problem.md';
 
     
+        import Fundementals_1_Solution_14 from './modules/01-fundementals/14-click-counter-hooks/exercise/App';
+        import Fundementals_1_Problem_14 from './modules/01-fundementals/14-click-counter-hooks/problem.md';
+
+    
+        import Fundementals_1_Solution_15 from './modules/01-fundementals/15-clock-component-hooks/exercise/App';
+        import Fundementals_1_Problem_15 from './modules/01-fundementals/15-clock-component-hooks/problem.md';
+
+    
+        import Fundementals_1_Solution_16 from './modules/01-fundementals/16-currency-calculator/exercise/App';
+        import Fundementals_1_Problem_16 from './modules/01-fundementals/16-currency-calculator/problem.md';
+
+    
 
     
         import StyledComponents_2_Solution_14 from './modules/02-styled-components/14-styled-button/exercise/App';
@@ -83,6 +95,12 @@ import Exercise from "./components/Exercise";
     
         import ReactRouter_3_Solution_18 from './modules/03-react-router/18-route-params/exercise/App';
         import ReactRouter_3_Problem_18 from './modules/03-react-router/18-route-params/problem.md';
+
+    
+
+    
+        import Redux_4_Solution_1 from './modules/04-redux/01-hello-world-component/exercise/App';
+        import Redux_4_Problem_1 from './modules/04-redux/01-hello-world-component/problem.md';
 
     
 
@@ -124,6 +142,12 @@ return (
     
         <Route path="/01-fundementals/exercise/13" component={() => Exercise({ component: Fundementals_1_Solution_13, problem: Fundementals_1_Problem_13 })}/>
     
+        <Route path="/01-fundementals/exercise/14" component={() => Exercise({ component: Fundementals_1_Solution_14, problem: Fundementals_1_Problem_14 })}/>
+    
+        <Route path="/01-fundementals/exercise/15" component={() => Exercise({ component: Fundementals_1_Solution_15, problem: Fundementals_1_Problem_15 })}/>
+    
+        <Route path="/01-fundementals/exercise/16" component={() => Exercise({ component: Fundementals_1_Solution_16, problem: Fundementals_1_Problem_16 })}/>
+    
 
     
         <Route path="/02-styled-components/exercise/14" component={() => Exercise({ component: StyledComponents_2_Solution_14, problem: StyledComponents_2_Problem_14 })}/>
@@ -137,6 +161,10 @@ return (
         <Route path="/03-react-router/exercise/17" component={() => Exercise({ component: ReactRouter_3_Solution_17, problem: ReactRouter_3_Problem_17 })}/>
     
         <Route path="/03-react-router/exercise/18" component={() => Exercise({ component: ReactRouter_3_Solution_18, problem: ReactRouter_3_Problem_18 })}/>
+    
+
+    
+        <Route path="/04-redux/exercise/1" component={() => Exercise({ component: Redux_4_Solution_1, problem: Redux_4_Problem_1 })}/>
     
 
 </>

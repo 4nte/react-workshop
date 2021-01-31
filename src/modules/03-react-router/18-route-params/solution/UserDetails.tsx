@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from "react-router";
-import { users } from "./data";
+import { users } from "../exercise/data";
 import styled from "styled-components";
 
 const Wrapper = styled.div`

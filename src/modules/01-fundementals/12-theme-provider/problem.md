@@ -1,5 +1,7 @@
 ## Mission
-In **App.tsx** create React context named **ThemeContext** and export named constant (**don't** export as default!).<br>
+Create a theme context, where
+
+In **App.tsx** create React context named **ThemeContext** and export it.<br>
 
 Context will provide following value (choose your colors 🌟, and text):
 
@@ -8,40 +10,39 @@ Context will provide following value (choose your colors 🌟, and text):
   backgroundColor: '#f0f0f0',
   navigationColor: '#0193e3',
   cardColor: '#e5eef3',
-  reactContextText: 'Some random content text'
+  reactContextText: 'In a nutshell, React context is just a global dependency injection.'
 }
 ```
 ---
-### Navigation 
+### (1/3) Navigation component
 
-**Create** Navigation component that will display navigation with text:
+**Create** the Navigation component that will render three items:
  * Home
  * About
  * Blog
 
-**Style** Navigation:
- * **background-color** using context value `navigationColor`
- * add **"role="navigation"** to styled element (**IMPORTANT** for testing purposes)
+ * set **background-color** property to `navigationColor` from `ThemeContext`
+ * add **"role="navigation"** to styled element (**required** for testing purposes)
 
 ---
-### Card 
+### (2/3) Card component
 
 **Create** Card component that will render text from `reactContextText` from context
 
 **Style** Card:
- * **background-color** using context value `cardColor`
- * add **"role="card"** to styled element (**IMPORTANT** for testing purposes)
+ * Apply `navigationColor` from `ThemeContext`, as `background-color` of the `Navigation` component.
+ * Add **role="card"** property to the styled element (**IMPORTANT** for testing purposes)
 
 ---
-### Content 
+### (3/3) Content component
 
-**Create** Content component that will render: 
- * Heading with text **`Content`**
+**Create** `Content` component that will render: 
+ * Heading with text "Content"
  * **Card** component
  
 **Style** Content:
  * **background-color** using context value `backgroundColor`
- * add **"role="content"** to styled element (**IMPORTANT** for testing purposes)
+ * add **role="content"** to styled element (**IMPORTANT** for testing purposes)
 
 ---
  

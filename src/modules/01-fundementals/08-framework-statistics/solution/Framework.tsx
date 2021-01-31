@@ -1,11 +1,11 @@
 import React from 'react';
 import {FrameworkType} from "../exercise/data";
 
-interface HOCProps {
+type Props = {
   data: FrameworkType
 }
 
-function  Framework({ data }: HOCProps) {
+function Framework({ data }: Props) {
   return (
     <div style={{backgroundColor: "#eaeaea", marginTop: 10, padding: 5}}>
       <div>Name: {data.name}</div>

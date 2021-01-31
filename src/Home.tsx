@@ -3,45 +3,45 @@ import { RouteComponentProps } from "react-router-dom";
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  max-width: 300px;
-  min-width: 200px;
-  margin: 15px;
+max-width: 300px;
+min-width: 200px;
+margin: 15px;
 `;
 
 const Exercise = styled.div`
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 5px rgba(204,204,204,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  display: flex;
-  flex-direction: column;
-  &:hover {
-    cursor: pointer;
-    box-shadow: 0 0 10px 10px rgba(204,204,204,0.33);
-  }
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 0 5px 5px rgba(204,204,204,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+display: flex;
+flex-direction: column;
+&:hover {
+cursor: pointer;
+box-shadow: 0 0 10px 10px rgba(204,204,204,0.33);
+}
 `;
 
 const Title = styled.div`
-  text-align: start;
-  display: block;
-  font-weight: bold;
-  font-size: 30px;
-  border-bottom: 1px solid #eaeaea;
-  padding: 20px;  
+text-align: start;
+display: block;
+font-weight: bold;
+font-size: 30px;
+border-bottom: 1px solid #eaeaea;
+padding: 20px;
 `;
 
 const Number = styled.span`
-  font-size: 2rem;
-  font-weight: 700;
+font-size: 2rem;
+font-weight: 700;
 `;
 
 const Section = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
 `;
 const Container = styled.div`
-  padding: 20px;
+padding: 20px;
 `;
 const Home: React.FC<any> = ({ history }) => {
     return (
@@ -154,6 +154,30 @@ const Home: React.FC<any> = ({ history }) => {
             </Wrapper>
 
         
+            <Wrapper>
+                <Exercise onClick={() => history.push("/01-fundementals/exercise/14")}>
+                <Number>14</Number>
+                <div>click-counter-hooks</div>
+                </Exercise>
+            </Wrapper>
+
+        
+            <Wrapper>
+                <Exercise onClick={() => history.push("/01-fundementals/exercise/15")}>
+                <Number>15</Number>
+                <div>clock-component-hooks</div>
+                </Exercise>
+            </Wrapper>
+
+        
+            <Wrapper>
+                <Exercise onClick={() => history.push("/01-fundementals/exercise/16")}>
+                <Number>16</Number>
+                <div>currency-calculator</div>
+                </Exercise>
+            </Wrapper>
+
+        
         </Section>
     
         <Title>02-styled-components</Title>
@@ -200,6 +224,19 @@ const Home: React.FC<any> = ({ history }) => {
                 <Exercise onClick={() => history.push("/03-react-router/exercise/18")}>
                 <Number>18</Number>
                 <div>route-params</div>
+                </Exercise>
+            </Wrapper>
+
+        
+        </Section>
+    
+        <Title>04-redux</Title>
+        <Section>
+        
+            <Wrapper>
+                <Exercise onClick={() => history.push("/04-redux/exercise/1")}>
+                <Number>1</Number>
+                <div>hello-world-component</div>
                 </Exercise>
             </Wrapper>
 
