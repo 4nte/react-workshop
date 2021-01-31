@@ -49,9 +49,9 @@ func main() {
 		}
 
 		newName := fmt.Sprintf("%02d-%s", id+offset, name)
-		fmt.Println(file.Name(), newName)
-		//if err := os.Rename(file.Name(), newName); err != nil {
-		//	panic(err)
-		//}
+		fmt.Println("renamed", file.Name(), "to", newName)
+		if err := os.Rename(file.Name(), newName); err != nil {
+			panic(err)
+		}
 	}
 }

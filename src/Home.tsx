@@ -61,7 +61,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/2")}>
                 <Number>2</Number>
-                <div>using-typescript</div>
+                <div>add-component</div>
                 </Exercise>
             </Wrapper>
 
@@ -69,7 +69,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/3")}>
                 <Number>3</Number>
-                <div>car-info-component</div>
+                <div>hello-world-typescript</div>
                 </Exercise>
             </Wrapper>
 
@@ -77,7 +77,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/4")}>
                 <Number>4</Number>
-                <div>click-alert</div>
+                <div>add-component-typescript</div>
                 </Exercise>
             </Wrapper>
 
@@ -85,7 +85,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/5")}>
                 <Number>5</Number>
-                <div>click-counter</div>
+                <div>car-info-component</div>
                 </Exercise>
             </Wrapper>
 
@@ -93,7 +93,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/6")}>
                 <Number>6</Number>
-                <div>favorite-color</div>
+                <div>click-alert</div>
                 </Exercise>
             </Wrapper>
 
@@ -101,7 +101,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/7")}>
                 <Number>7</Number>
-                <div>clock-component</div>
+                <div>click-counter</div>
                 </Exercise>
             </Wrapper>
 
@@ -109,7 +109,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/8")}>
                 <Number>8</Number>
-                <div>framework-statistics</div>
+                <div>favorite-color</div>
                 </Exercise>
             </Wrapper>
 
@@ -117,7 +117,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/9")}>
                 <Number>9</Number>
-                <div>service-status</div>
+                <div>clock-component</div>
                 </Exercise>
             </Wrapper>
 
@@ -125,7 +125,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/10")}>
                 <Number>10</Number>
-                <div>user-form</div>
+                <div>framework-statistics</div>
                 </Exercise>
             </Wrapper>
 
@@ -133,7 +133,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/11")}>
                 <Number>11</Number>
-                <div>conversion-m-ft</div>
+                <div>service-status</div>
                 </Exercise>
             </Wrapper>
 
@@ -141,7 +141,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/12")}>
                 <Number>12</Number>
-                <div>theme-provider</div>
+                <div>user-form</div>
                 </Exercise>
             </Wrapper>
 
@@ -149,7 +149,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/13")}>
                 <Number>13</Number>
-                <div>counter-error-boundary</div>
+                <div>conversion-m-ft</div>
                 </Exercise>
             </Wrapper>
 
@@ -157,7 +157,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/14")}>
                 <Number>14</Number>
-                <div>click-counter-hooks</div>
+                <div>theme-provider</div>
                 </Exercise>
             </Wrapper>
 
@@ -165,7 +165,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/15")}>
                 <Number>15</Number>
-                <div>clock-component-hooks</div>
+                <div>counter-error-boundary</div>
                 </Exercise>
             </Wrapper>
 
@@ -173,7 +173,31 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/01-fundementals/exercise/16")}>
                 <Number>16</Number>
-                <div>currency-calculator</div>
+                <div>click-counter-hooks</div>
+                </Exercise>
+            </Wrapper>
+
+        
+            <Wrapper>
+                <Exercise onClick={() => history.push("/01-fundementals/exercise/17")}>
+                <Number>17</Number>
+                <div>clock-component-hooks</div>
+                </Exercise>
+            </Wrapper>
+
+        
+            <Wrapper>
+                <Exercise onClick={() => history.push("/01-fundementals/exercise/18")}>
+                <Number>18</Number>
+                <div>reaction-time-game</div>
+                </Exercise>
+            </Wrapper>
+
+        
+            <Wrapper>
+                <Exercise onClick={() => history.push("/01-fundementals/exercise/19")}>
+                <Number>19</Number>
+                <div>currency-conversion-component</div>
                 </Exercise>
             </Wrapper>
 
@@ -236,7 +260,7 @@ const Home: React.FC<any> = ({ history }) => {
             <Wrapper>
                 <Exercise onClick={() => history.push("/04-redux/exercise/1")}>
                 <Number>1</Number>
-                <div>hello-world-component</div>
+                <div>calculator</div>
                 </Exercise>
             </Wrapper>
 

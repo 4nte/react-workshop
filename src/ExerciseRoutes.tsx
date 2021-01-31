@@ -13,64 +13,76 @@ import Exercise from "./components/Exercise";
         import Fundementals_1_Problem_1 from './modules/01-fundementals/01-hello-world-component/problem.md';
 
     
-        import Fundementals_1_Solution_2 from './modules/01-fundementals/02-using-typescript/exercise/App';
-        import Fundementals_1_Problem_2 from './modules/01-fundementals/02-using-typescript/problem.md';
+        import Fundementals_1_Solution_2 from './modules/01-fundementals/02-add-component/exercise/App';
+        import Fundementals_1_Problem_2 from './modules/01-fundementals/02-add-component/problem.md';
 
     
-        import Fundementals_1_Solution_3 from './modules/01-fundementals/03-car-info-component/exercise/App';
-        import Fundementals_1_Problem_3 from './modules/01-fundementals/03-car-info-component/problem.md';
+        import Fundementals_1_Solution_3 from './modules/01-fundementals/03-hello-world-typescript/exercise/App';
+        import Fundementals_1_Problem_3 from './modules/01-fundementals/03-hello-world-typescript/problem.md';
 
     
-        import Fundementals_1_Solution_4 from './modules/01-fundementals/04-click-alert/exercise/App';
-        import Fundementals_1_Problem_4 from './modules/01-fundementals/04-click-alert/problem.md';
+        import Fundementals_1_Solution_4 from './modules/01-fundementals/04-add-component-typescript/exercise/App';
+        import Fundementals_1_Problem_4 from './modules/01-fundementals/04-add-component-typescript/problem.md';
 
     
-        import Fundementals_1_Solution_5 from './modules/01-fundementals/05-click-counter/exercise/App';
-        import Fundementals_1_Problem_5 from './modules/01-fundementals/05-click-counter/problem.md';
+        import Fundementals_1_Solution_5 from './modules/01-fundementals/05-car-info-component/exercise/App';
+        import Fundementals_1_Problem_5 from './modules/01-fundementals/05-car-info-component/problem.md';
 
     
-        import Fundementals_1_Solution_6 from './modules/01-fundementals/06-favorite-color/exercise/App';
-        import Fundementals_1_Problem_6 from './modules/01-fundementals/06-favorite-color/problem.md';
+        import Fundementals_1_Solution_6 from './modules/01-fundementals/06-click-alert/exercise/App';
+        import Fundementals_1_Problem_6 from './modules/01-fundementals/06-click-alert/problem.md';
 
     
-        import Fundementals_1_Solution_7 from './modules/01-fundementals/07-clock-component/exercise/App';
-        import Fundementals_1_Problem_7 from './modules/01-fundementals/07-clock-component/problem.md';
+        import Fundementals_1_Solution_7 from './modules/01-fundementals/07-click-counter/exercise/App';
+        import Fundementals_1_Problem_7 from './modules/01-fundementals/07-click-counter/problem.md';
 
     
-        import Fundementals_1_Solution_8 from './modules/01-fundementals/08-framework-statistics/exercise/App';
-        import Fundementals_1_Problem_8 from './modules/01-fundementals/08-framework-statistics/problem.md';
+        import Fundementals_1_Solution_8 from './modules/01-fundementals/08-favorite-color/exercise/App';
+        import Fundementals_1_Problem_8 from './modules/01-fundementals/08-favorite-color/problem.md';
 
     
-        import Fundementals_1_Solution_9 from './modules/01-fundementals/09-service-status/exercise/App';
-        import Fundementals_1_Problem_9 from './modules/01-fundementals/09-service-status/problem.md';
+        import Fundementals_1_Solution_9 from './modules/01-fundementals/09-clock-component/exercise/App';
+        import Fundementals_1_Problem_9 from './modules/01-fundementals/09-clock-component/problem.md';
 
     
-        import Fundementals_1_Solution_10 from './modules/01-fundementals/10-user-form/exercise/App';
-        import Fundementals_1_Problem_10 from './modules/01-fundementals/10-user-form/problem.md';
+        import Fundementals_1_Solution_10 from './modules/01-fundementals/10-framework-statistics/exercise/App';
+        import Fundementals_1_Problem_10 from './modules/01-fundementals/10-framework-statistics/problem.md';
 
     
-        import Fundementals_1_Solution_11 from './modules/01-fundementals/11-conversion-m-ft/exercise/App';
-        import Fundementals_1_Problem_11 from './modules/01-fundementals/11-conversion-m-ft/problem.md';
+        import Fundementals_1_Solution_11 from './modules/01-fundementals/11-service-status/exercise/App';
+        import Fundementals_1_Problem_11 from './modules/01-fundementals/11-service-status/problem.md';
 
     
-        import Fundementals_1_Solution_12 from './modules/01-fundementals/12-theme-provider/exercise/App';
-        import Fundementals_1_Problem_12 from './modules/01-fundementals/12-theme-provider/problem.md';
+        import Fundementals_1_Solution_12 from './modules/01-fundementals/12-user-form/exercise/App';
+        import Fundementals_1_Problem_12 from './modules/01-fundementals/12-user-form/problem.md';
 
     
-        import Fundementals_1_Solution_13 from './modules/01-fundementals/13-counter-error-boundary/exercise/App';
-        import Fundementals_1_Problem_13 from './modules/01-fundementals/13-counter-error-boundary/problem.md';
+        import Fundementals_1_Solution_13 from './modules/01-fundementals/13-conversion-m-ft/exercise/App';
+        import Fundementals_1_Problem_13 from './modules/01-fundementals/13-conversion-m-ft/problem.md';
 
     
-        import Fundementals_1_Solution_14 from './modules/01-fundementals/14-click-counter-hooks/exercise/App';
-        import Fundementals_1_Problem_14 from './modules/01-fundementals/14-click-counter-hooks/problem.md';
+        import Fundementals_1_Solution_14 from './modules/01-fundementals/14-theme-provider/exercise/App';
+        import Fundementals_1_Problem_14 from './modules/01-fundementals/14-theme-provider/problem.md';
 
     
-        import Fundementals_1_Solution_15 from './modules/01-fundementals/15-clock-component-hooks/exercise/App';
-        import Fundementals_1_Problem_15 from './modules/01-fundementals/15-clock-component-hooks/problem.md';
+        import Fundementals_1_Solution_15 from './modules/01-fundementals/15-counter-error-boundary/exercise/App';
+        import Fundementals_1_Problem_15 from './modules/01-fundementals/15-counter-error-boundary/problem.md';
 
     
-        import Fundementals_1_Solution_16 from './modules/01-fundementals/16-currency-calculator/exercise/App';
-        import Fundementals_1_Problem_16 from './modules/01-fundementals/16-currency-calculator/problem.md';
+        import Fundementals_1_Solution_16 from './modules/01-fundementals/16-click-counter-hooks/exercise/App';
+        import Fundementals_1_Problem_16 from './modules/01-fundementals/16-click-counter-hooks/problem.md';
+
+    
+        import Fundementals_1_Solution_17 from './modules/01-fundementals/17-clock-component-hooks/exercise/App';
+        import Fundementals_1_Problem_17 from './modules/01-fundementals/17-clock-component-hooks/problem.md';
+
+    
+        import Fundementals_1_Solution_18 from './modules/01-fundementals/18-reaction-time-game/exercise/App';
+        import Fundementals_1_Problem_18 from './modules/01-fundementals/18-reaction-time-game/problem.md';
+
+    
+        import Fundementals_1_Solution_19 from './modules/01-fundementals/19-currency-conversion-component/exercise/App';
+        import Fundementals_1_Problem_19 from './modules/01-fundementals/19-currency-conversion-component/problem.md';
 
     
 
@@ -99,8 +111,8 @@ import Exercise from "./components/Exercise";
     
 
     
-        import Redux_4_Solution_1 from './modules/04-redux/01-hello-world-component/exercise/App';
-        import Redux_4_Problem_1 from './modules/04-redux/01-hello-world-component/problem.md';
+        import Redux_4_Solution_1 from './modules/04-redux/01-calculator/exercise/App';
+        import Redux_4_Problem_1 from './modules/04-redux/01-calculator/problem.md';
 
     
 
@@ -147,6 +159,12 @@ return (
         <Route path="/01-fundementals/exercise/15" component={() => Exercise({ component: Fundementals_1_Solution_15, problem: Fundementals_1_Problem_15 })}/>
     
         <Route path="/01-fundementals/exercise/16" component={() => Exercise({ component: Fundementals_1_Solution_16, problem: Fundementals_1_Problem_16 })}/>
+    
+        <Route path="/01-fundementals/exercise/17" component={() => Exercise({ component: Fundementals_1_Solution_17, problem: Fundementals_1_Problem_17 })}/>
+    
+        <Route path="/01-fundementals/exercise/18" component={() => Exercise({ component: Fundementals_1_Solution_18, problem: Fundementals_1_Problem_18 })}/>
+    
+        <Route path="/01-fundementals/exercise/19" component={() => Exercise({ component: Fundementals_1_Solution_19, problem: Fundementals_1_Problem_19 })}/>
     
 
     
