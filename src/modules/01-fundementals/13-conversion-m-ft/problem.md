@@ -1,28 +1,23 @@
 ## Mission
-Create **CurrencyConverter** component that will render component **UnitInput** 2 times. Once for input in **meter** and once for **feet** units.
-**UnitInput** should render one input of **type="number"**. <br>
-Inputs should be synchronized. Each time one of inputs has been changed other one should be updated. <br>
-Use conditional rendering for **UnitInput**
+Create a **Statistics** component that will show javascript framework statistic for 2018. <br>
+Import framework data from `/exercise/data.ts` that is exported as default. <br>
+Data is list of framework statistics for 2018 with type ***FrameworkType*** defined in `/exercise/data.ts`.
 
-**Labels for inputs:** 
- * Enter value in meters:
- * Enter value in feet:
- 
-*NOTE!* - label must be connected with input, either with **htmlFor** attribute in label or input nested in label.
-<br>
+Create a **Framework** component that will be displayed in **Statistics** component for each framework from data. <br>
+**Framework** should receive props of type `{ data: FrameworkType }`; <br>
+**Framework** should display values of specific framework in format `{label}: {value}`. <br>
+Labels are:
+* Name
+* Popularity
+* GitHub stars
+* Ranked
 
-## Example
-![Alt Text](https://media.giphy.com/media/iFrikjAJSqMCgVCsyl/giphy.gif)
-
-## Reference 
-**1 meter = 3.2808399 feet**
+***BONUS*** - add inline style to **Framework** component for better list display.
 
 ## Steps
-1. Create file `exercise/CurrencyConverter.tsx` and export component `CurrencyConverter` as default.
-2. Create file `exercise/UnitInput.tsx` and export component `UnitInput` as default.
-3. Import `CurrencyConverter` component in `exercise/App.tsx` and render it.
-4. Import `UnitInput` component in `exercise/CurrencyConverter.tsx` and render it.
-5. Add logic for rendering `UnitInput` type (*meter* or *feet*) based on props.
-6. Handle `UnitInput` input change. (use lifting state up)
-7. Run all tests from `App.test.tsx`. 
-
+1. Create file `exercise/Statistics.tsx` and export component `Statistics` as default.
+2. Import `Statistics` component in `exercise/App.tsx` and render it.
+3. In `Statistics.tsx` import data from `data.ts`;
+4. Create file `exercise/Framework.tsx` and export component `Framework` as default.
+5. Import `Framework` component in `exercise/Statistics.tsx` and render it in list.
+6. Run all tests from `App.test.tsx`. 
