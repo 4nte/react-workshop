@@ -1,9 +1,11 @@
 import React from 'react';
 /* Import your component here */
+import Hello from '../solution/Hello';
+
 
 function App() {
     return <div>
-        {/* render your component here */}
+        <Hello name={myName} />
     </div>
 }
 

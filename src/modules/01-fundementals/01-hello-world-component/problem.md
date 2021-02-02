@@ -1,6 +1,6 @@
 
 ## Mission
-Create a **Hello** component. The component should accept a `name` prop and return a greeting in this format `Add, {name}!`
+Create a **Hello** component. The component should accept a `name` prop and return a greeting in this format `Hello, {name}!`
 
 
 ## Steps

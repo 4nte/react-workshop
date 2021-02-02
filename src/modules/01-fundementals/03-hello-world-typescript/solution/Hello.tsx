@@ -4,15 +4,8 @@ type Props = {
     name: string,
 }
 
-const Hello: React.FC<Props> = (props) => {
+const Hello = (props: Props) => {
     return <p>Hi, {props.name}</p>
 };
 
 export default Hello;
-
-
-interface Person {
-    firstName: string,
-    lastName: string,
-    age: number
-}
